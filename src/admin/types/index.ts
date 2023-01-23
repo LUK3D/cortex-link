@@ -9,6 +9,7 @@ const Menu = z.object({
     link: z.string().default('/').optional(),
     tooltip: z.string().optional(),
     active: z.boolean().default(false).optional(),
+    expanded: z.boolean().default(false).optional(),
     parentLink: z.string().default('/').optional(),
 
 })
