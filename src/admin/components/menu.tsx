@@ -21,7 +21,7 @@ const MenuComponent = ({ menus, onClick }: IMenu) => {
                             <Button onClick={() => {
                                 !menu.children?.length && !expandedMenus.includes(menu.link ?? '') && onClick(menu);
                                 menu.children?.length && expand(menu.link ?? '/');
-                                expandedMenus.includes(menu.link ?? '') && unExpand(menu.link ?? '/')
+                                expandedMenus.includes(menu.link ?? '') && unExpand(menu.link ?? '')
                             }} expanded={menu.children?.length != null && (expandedMenus.includes(menu.link ?? ''))} active={menu.active} expandable={menu.children?.length != null}>
                                 <div className='flex flex-col w-full'>
                                     <div className='flex items-center w-full'>

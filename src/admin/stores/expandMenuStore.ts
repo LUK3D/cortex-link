@@ -13,8 +13,8 @@ export const expandMenuStore = create<IExpandMenu>((set) => ({
     },
     unExpand(link: string) {
         set(function (ctx) {
-            let items = ctx.expandedMenus;
-            items.splice(items.indexOf(link), 1);
+            let items = ctx.expandedMenus.filter((x) => x != link);
+            console.log(items, ctx.expandedMenus);
 
             return { ...ctx, expandedMenus: items };
         });

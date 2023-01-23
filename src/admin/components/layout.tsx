@@ -17,16 +17,20 @@ const Layout = ({ children }: ILayout) => {
     }
     return (
         <div className="w-full flex  h-full text-gray-700">
-            <div className="w-[300px] h-full bg-white border-r flex flex-col">
-                <div className="h-full w-full flex flex-col overflow-y-auto py-10 px-2">
+
+            <div className="w-[400px] h-full bg-white border-r flex flex-col">
+                <div className="p-5 border-b pb-2">
+                    <h1 className="text-2xl font-bold">Cortex-<span className="text-indigo-500">Link</span></h1>
+                </div>
+                <div className="h-full w-full flex flex-col overflow-y-auto pb-10 pt-5 px-2 ">
                     <MenuComponent onClick={onClick} menus={menus}></MenuComponent>
                 </div>
-                <div className="w-full h-f flex flex-col">
-                    <div className="w-full   flex flex-col  ">
-                        <div className="mb-2">
+                <div className="w-full h-f flex flex-col  border-t ">
+                    <div className="w-full   flex flex-col   ">
+                        <div className="mb-2 ">
                             <Button onClick={() => { }} >
-                                <div className="flex w-full justify-between pr-4 my-1">
-                                    <div className="flex">
+                                <div className="flex w-full justify-between pr-4 my-1  ">
+                                    <div className="flex  ">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
                                         </svg>
