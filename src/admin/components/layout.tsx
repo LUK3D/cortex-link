@@ -19,7 +19,7 @@ const Layout = ({ children }: ILayout) => {
         <div className="w-full flex  h-full text-gray-700">
 
             <div className="w-[400px] h-full bg-white border-r flex flex-col">
-                <div className="p-5 border-b pb-2">
+                <div className="p-5 border-b  h-17">
                     <h1 className="text-2xl font-bold">Cortex-<span className="text-indigo-500">Link</span></h1>
                 </div>
                 <div className="h-full w-full flex flex-col overflow-y-auto pb-10 pt-5 px-2 ">
@@ -75,8 +75,28 @@ const Layout = ({ children }: ILayout) => {
                 </div>
             </div>
             <div className="w-full h-full flex flex-col">
-                <div className="w-full  bg-white border-b px-5 py-4">
+                <div className="w-full  bg-white border-b px-5 h-18.4 flex items-center justify-between">
                     <h1 className="font-bold text-xl">Get Started</h1>
+                    <div className=" flex items-center">
+                        <Button onClick={() => { }} className="w-auto shadow pr-4 ">
+                            <div className="mr-4 select-none text-indigo-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
+                                </svg>
+                            </div>
+                            <p className="text-indigo-700 select-none">Logout</p>
+                        </Button>
+                        <Button onClick={() => { }} className="w-auto shadow ml-4 relative rounded-full">
+                            <div className="mr-3 select-none text-yellow-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M3.124 7.5A8.969 8.969 0 015.292 3m13.416 0a8.969 8.969 0 012.168 4.5" />
+                                </svg>
+                            </div>
+                            <div className="w-6 h-6 bg-red-500 flex justify-center items-center text-white rounded-full absolute -top-2 -right-2">
+                                <p>01</p>
+                            </div>
+                        </Button>
+                    </div>
                 </div>
                 <div className="flex flex-col w-full h-full  overflow-y-auto">
                     {children}
